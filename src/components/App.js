@@ -14,9 +14,9 @@ function App() {
       .catch((error) => alert(error.message));
   }, []);
 
-  if (items.length < 1) {
-    return <h1>Loading...</h1>;
-  }
+  // if (items.length < 1) {
+  //   return <h1>Loading...</h1>;
+  // }
 
   function handlePost(itemData) {
     setItems([...items, itemData]);
